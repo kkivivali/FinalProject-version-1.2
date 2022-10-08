@@ -1,0 +1,44 @@
+body{
+    background-color:#dcdcdc;
+}
+.loginForm{
+    width:50%;
+}
+.header {
+    background-color: #808080;
+    gap: 12px;
+    display: flex; 
+    border: 3px solid black;
+    height: 150px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, .25);
+    & a{
+        text-decoration: none;
+        color: black;
+    }
+    & h1 {
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 10vh;
+    justify-content: center;
+    align-items: center;
+    }
+}
+.card {
+    border: 1px solid gray;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, .25);
+    border-radius: 8px;
+    align-items: center;
+    height: 7vh;
+    &:hover {
+        border: 1px solid black;
+        box-shadow: 4px 4px 6px rgba(0, 0, 0, .25);
+        border-radius: 8px;
+        height: 8vh;
+        align-items: center;
+        transition: 1s;
+    }
+    a{
+        text-decoration:none;
+        color: inherit;
+    }
+}
+
