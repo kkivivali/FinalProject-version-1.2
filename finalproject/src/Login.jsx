@@ -7,7 +7,10 @@ import { Routes, Route, Link } from 'react-router-dom';
 import { AuthContextProvider } from './logincomp/context/AuthContext';
 import ProtectedRoute from './logincomp/ProtectedRoute';
 
+
 function Login () {
+    
+    
     return (
         <div className='loginForm'>
         <button className="logBtn"><Link to='/Signin' className='underline'>Logi Sisse</Link></button>

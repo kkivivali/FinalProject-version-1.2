@@ -4,11 +4,14 @@ import '../index.css'
 import { Link, useNavigate } from 'react-router-dom'
 import { UserAuth } from './context/AuthContext';
 import { useState } from 'react';
+import Login from '../Login';
+
 
 const Signin = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')  
   const [error, setError] = useState('')
+  const [show, toggleShow] = useState(true)
   const navigate = useNavigate();
   const { signIn } = UserAuth();
   const handleSubmit = async (e) => {
@@ -31,7 +34,7 @@ const Signin = () => {
             <label className="block text-gray-700 text-sm font-bold mb-2">Password</label>
             <input id="passwordForm" className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Password' onChange={(e) => setPassword(e.target.value)} type="password" />
         </div>
-        <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Logi Sisse</button>
+        <button  onClick={() => toggleShow(!show)}> {show ? "Show" : "Hide"}  Logi Sisse</button> {show && Login}
         </form>
 </div>
   )

@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
+import Login from '../Login';
 import { UserAuth } from './context/AuthContext';
 
 const Account = () => {
@@ -14,6 +15,7 @@ const Account = () => {
       console.log(e.message)
     }
   }
+  
   return (
     <div>
       <p>User Email: {user && user.email}</p>
