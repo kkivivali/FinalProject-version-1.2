@@ -14,13 +14,10 @@ const Account = () => {
       console.log(e.message)
     }
   }
- 
   return (
     <div>
-    <p>User Email: {user && user.email}</p>
-
-    <button onClick={handleLogout}>Log Out</button>
- 
+      <p>User Email: {user && user.email}</p>
+      <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded' onClick={handleLogout}>Log Out</button>
   </div>
    )
 }

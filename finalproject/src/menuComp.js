@@ -2,7 +2,7 @@
 import React from 'react';
 import './App.scss';
 import {carProductList, pcProductList, motorCycleProductList} from './products.js'
-import './index.css';
+
 
 function navMenu() {
 return(

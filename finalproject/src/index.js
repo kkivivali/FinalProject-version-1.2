@@ -6,13 +6,15 @@ import NavMenu from './menuComp';
 import Container from './container';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-import './index.css';
+import Login from './Login';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
   <React.StrictMode>
     <Header />
     <Container />
+    <Login />
     <NavMenu />
   </React.StrictMode>
   </BrowserRouter>

@@ -3,9 +3,11 @@ import './App.scss';
 import './index.css'
 function Container (){
     return (
-        <div className="container"><h1>
-        Hello world! I am a container, that will display the data ...soon...
-      </h1></div>
+        <div className='Container'>
+            <div className='containerContent'>
+                <h1>Hello World</h1>
+            </div>
+        </div>
     )
 }
 
